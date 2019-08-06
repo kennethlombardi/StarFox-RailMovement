@@ -10799,7 +10799,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1e-45, y: 7.1e-44, z: 0, w: 0.00000008549574}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -40814,5 +40814,10 @@ PrefabInstance:
       propertyPath: stars
       value: 
       objectReference: {fileID: 908740349}
+    - target: {fileID: 1888532120382306035, guid: f26468f9bfc7043a780bc0682d008767,
+        type: 3}
+      propertyPath: joystick
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f26468f9bfc7043a780bc0682d008767, type: 3}

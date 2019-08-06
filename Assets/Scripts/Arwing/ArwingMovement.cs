@@ -5,12 +5,13 @@ using DG.Tweening;
 using Cinemachine;
 using UnityEngine.Rendering.PostProcessing;
 
-public class PlayerMovement : MonoBehaviour
+public class ArwingMovement : MonoBehaviour
 {
     private Transform playerModel;
 
     [Header("Settings")]
     public bool joystick = true;
+    public bool ringFocus = true;
 
     [Space]
 
@@ -45,8 +46,16 @@ public class PlayerMovement : MonoBehaviour
         float h = joystick ? Input.GetAxis("Horizontal") : Input.GetAxis("Mouse X");
         float v = joystick ? Input.GetAxis("Vertical") : Input.GetAxis("Mouse Y");
 
-        LocalMove(h, v, xySpeed);
-        RotationLook(h,v, lookSpeed);
+        if (ringFocus)
+        {
+            GameObject[] rings = GameObject.FindGameObjectsWithTag("ring");
+            LocalMove(h, v, xySpeed);
+        }
+        else
+        {
+            LocalMove(h, v, xySpeed);
+        }
+        RotationLook(h, v, lookSpeed);
         HorizontalLean(playerModel, h, 80, .1f);
 
         if (Input.GetButtonDown("Action"))
