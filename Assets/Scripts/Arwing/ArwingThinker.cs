@@ -57,4 +57,16 @@ public class ArwingThinker : MonoBehaviour
             r.material.color = c;
         }
     }
+
+    public void SetFoxForceFour(bool doAction)
+    {
+        this.Remember("foxFourceFour", doAction);
+        this.Remember("horizontalSplit", !doAction);
+    }
+
+    public void SetHorizontalSplit(bool doAction)
+    {
+        this.Remember("foxFourceFour", !doAction);
+        this.Remember("horizontalSplit", doAction);
+    }
 }

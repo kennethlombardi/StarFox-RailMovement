@@ -14,7 +14,6 @@ namespace Events
 
         public void Raise()
         {
-            Debug.Log("yooo");
             for (int i = eventListeners.Count - 1; i >= 0; i--)
                 eventListeners[i].OnEventRaised();
         }

@@ -8,7 +8,7 @@ public class PlayerControlledArwingBrain : ArwingBrain
     private string m_MovementAxisName;
     private string m_TurnAxisName;
     private string m_FireButton;
-
+    private string m_foxForceFour;
 
     public void OnEnable()
     {
@@ -19,6 +19,7 @@ public class PlayerControlledArwingBrain : ArwingBrain
 
     public override void Think(ArwingThinker arwingThinker)
     {
+        arwingThinker.Remember("asdf", "asdf");
         // Debug.Log("Yo");
         // var movement = arwingThinker.GetComponent<TankMovement>();
 
@@ -37,7 +38,6 @@ public class PlayerControlledArwingBrain : ArwingBrain
         var movement = arwingThinker.GetComponent<ArwingMovement>();
         float h = movement.joystick ? Input.GetAxis("Horizontal") : Input.GetAxis("Mouse X");
         float v = movement.joystick ? Input.GetAxis("Vertical") : Input.GetAxis("Mouse Y");
-        Debug.Log(h);
 
         movement.LocalMove(h, v, movement.xySpeed);
         movement.RotationLook(h, v, movement.lookSpeed);
