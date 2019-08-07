@@ -9105,6 +9105,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Peppy
       objectReference: {fileID: 0}
+    - target: {fileID: 1888532120382306033, guid: f26468f9bfc7043a780bc0682d008767,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1888532120382306032, guid: f26468f9bfc7043a780bc0682d008767,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9175,6 +9180,12 @@ PrefabInstance:
       propertyPath: aimTarget
       value: 
       objectReference: {fileID: 610185968}
+    - target: {fileID: 6768755059106968961, guid: f26468f9bfc7043a780bc0682d008767,
+        type: 3}
+      propertyPath: brain
+      value: 
+      objectReference: {fileID: 11400000, guid: 9cd2614c5857f463fbeb7ce245b66305,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f26468f9bfc7043a780bc0682d008767, type: 3}
 --- !u!1 &655015333
@@ -10504,7 +10515,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.35e-43, y: 2.6838e-41, z: 1e-45, w: 2.2692178e+14}
+  m_BoundingSphereOverride: {x: 1.1280472e+27, y: 1.33e-43, z: 0, w: 0.0000015352025}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -40738,6 +40749,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fox
+      objectReference: {fileID: 0}
+    - target: {fileID: 1888532120382306033, guid: f26468f9bfc7043a780bc0682d008767,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1888532120382306032, guid: f26468f9bfc7043a780bc0682d008767,
         type: 3}
