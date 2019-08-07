@@ -22,26 +22,26 @@ public class WingmanArwingBrain : ArwingBrain
 
     public override void Think(ArwingThinker arwingThinker)
     {
-        // m_foxForceFour = arwingThinker.Remember<bool>("foxForceFour");
-        // m_horizontalSplit = arwingThinker.Remember<bool>("horizontalSplit");
+        m_foxForceFour = arwingThinker.Remember<bool>("foxForceFour");
+        m_horizontalSplit = arwingThinker.Remember<bool>("horizontalSplit");
 
-        // if (m_foxForceFour)
-        // {
-        //     Debug.Log("this has to be being hit");
-        //     h = -0.5f;
-        //     v = 0.5f;
-        // }
-        // else if (m_horizontalSplit)
-        // {
-        //     h = -.5f;
-        // }
+        if (m_foxForceFour)
+        {
+            Debug.Log("this has to be being hit");
+            h = -0.5f;
+            v = 0.5f;
+        }
+        else if (m_horizontalSplit)
+        {
+            h = -.5f;
+        }
     }
 
     public override void Move(ArwingThinker arwingThinker)
     {
-        // var movement = arwingThinker.GetComponent<ArwingMovement>();
-        // movement.LocalMove(h, v, movement.xySpeed);
-        // movement.RotationLook(h, v, movement.lookSpeed);
-        // movement.HorizontalLean(h, 80, .1f);
+        var movement = arwingThinker.GetComponent<ArwingMovement>();
+        movement.LocalMove(h, v, movement.xySpeed);
+        movement.RotationLook(h, v, movement.lookSpeed);
+        movement.HorizontalLean(h, 80, .1f);
     }
 }

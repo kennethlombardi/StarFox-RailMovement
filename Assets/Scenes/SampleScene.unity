@@ -9016,7 +9016,7 @@ PrefabInstance:
         type: 3}
       propertyPath: aimTarget
       value: 
-      objectReference: {fileID: 610185968}
+      objectReference: {fileID: 149703611}
     - target: {fileID: 6768755059106968961, guid: f26468f9bfc7043a780bc0682d008767,
         type: 3}
       propertyPath: brain
