@@ -60,13 +60,13 @@ public class ArwingThinker : MonoBehaviour
 
     public void SetFoxForceFour(bool doAction)
     {
-        this.Remember("foxFourceFour", doAction);
+        this.Remember("foxForceFour", doAction);
         this.Remember("horizontalSplit", !doAction);
     }
 
     public void SetHorizontalSplit(bool doAction)
     {
-        this.Remember("foxFourceFour", !doAction);
+        this.Remember("foxForceFour", !doAction);
         this.Remember("horizontalSplit", doAction);
     }
 }
