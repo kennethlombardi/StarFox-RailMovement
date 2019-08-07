@@ -24,7 +24,7 @@ public class ArwingThinker : MonoBehaviour
 
     void Awake()
     {
-        enabled = false;
+        enabled = true;
     }
 
     void OnEnable()
@@ -42,6 +42,7 @@ public class ArwingThinker : MonoBehaviour
     void Update()
     {
         brain.Think(this);
+        brain.Move(this);
     }
 
     public void Setup()

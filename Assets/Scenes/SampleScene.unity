@@ -8813,7 +8813,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610185967}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 6, y: 0, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 149703611}
@@ -40824,5 +40824,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6768755059106968961, guid: f26468f9bfc7043a780bc0682d008767,
+        type: 3}
+      propertyPath: brain
+      value: 
+      objectReference: {fileID: 11400000, guid: 9cd2614c5857f463fbeb7ce245b66305,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f26468f9bfc7043a780bc0682d008767, type: 3}

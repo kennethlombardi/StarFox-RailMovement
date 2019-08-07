@@ -43,43 +43,9 @@ public class ArwingMovement : MonoBehaviour
 
     void Update()
     {
-        float h = joystick ? Input.GetAxis("Horizontal") : Input.GetAxis("Mouse X");
-        float v = joystick ? Input.GetAxis("Vertical") : Input.GetAxis("Mouse Y");
-
-        if (ringFocus)
-        {
-            GameObject[] rings = GameObject.FindGameObjectsWithTag("ring");
-            LocalMove(h, v, xySpeed);
-        }
-        else
-        {
-            LocalMove(h, v, xySpeed);
-        }
-        RotationLook(h, v, lookSpeed);
-        HorizontalLean(playerModel, h, 80, .1f);
-
-        if (Input.GetButtonDown("Action"))
-            Boost(true);
-
-        if (Input.GetButtonUp("Action"))
-            Boost(false);
-
-        if (Input.GetButtonDown("Fire3"))
-            Break(true);
-
-        if (Input.GetButtonUp("Fire3"))
-            Break(false);
-
-        if (Input.GetButtonDown("TriggerL") || Input.GetButtonDown("TriggerR"))
-        {
-            int dir = Input.GetButtonDown("TriggerL") ? -1 : 1;
-            QuickSpin(dir);
-        }
-
-
     }
 
-    void LocalMove(float x, float y, float speed)
+    public void LocalMove(float x, float y, float speed)
     {
         transform.localPosition += new Vector3(x, y, 0) * speed * Time.deltaTime;
         ClampPosition();
@@ -93,15 +59,16 @@ public class ArwingMovement : MonoBehaviour
         transform.position = Camera.main.ViewportToWorldPoint(pos);
     }
 
-    void RotationLook(float h, float v, float speed)
+    public void RotationLook(float h, float v, float speed)
     {
         aimTarget.parent.position = Vector3.zero;
         aimTarget.localPosition = new Vector3(h, v, 1);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(aimTarget.position), Mathf.Deg2Rad * speed * Time.deltaTime);
     }
 
-    void HorizontalLean(Transform target, float axis, float leanLimit, float lerpTime)
+    public void HorizontalLean(float axis, float leanLimit, float lerpTime)
     {
+        Transform target = playerModel;
         Vector3 targetEulerAngels = target.localEulerAngles;
         target.localEulerAngles = new Vector3(targetEulerAngels.x, targetEulerAngels.y, Mathf.LerpAngle(targetEulerAngels.z, -axis * leanLimit, lerpTime));
     }
@@ -149,7 +116,7 @@ public class ArwingMovement : MonoBehaviour
     }
 
 
-    void Boost(bool state)
+    public void Boost(bool state)
     {
 
         if (state)
@@ -185,7 +152,7 @@ public class ArwingMovement : MonoBehaviour
         SetCameraZoom(zoom, .4f);
     }
 
-    void Break(bool state)
+    public void Break(bool state)
     {
         float speed = state ? forwardSpeed / 3 : forwardSpeed;
         float zoom = state ? 3 : 0;
