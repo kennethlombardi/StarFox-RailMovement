@@ -5054,12 +5054,12 @@ Transform:
   - {fileID: 460878765}
   - {fileID: 1116071595}
   - {fileID: 125323703}
+  - {fileID: 2011561691}
   - {fileID: 1256959113}
   - {fileID: 1706762033}
-  - {fileID: 2011561691}
+  - {fileID: 1572542861}
   - {fileID: 271645836}
   - {fileID: 1976326774}
-  - {fileID: 1572542861}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5090,7 +5090,7 @@ PrefabInstance:
     - target: {fileID: 1022152898348364753, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
       propertyPath: m_Name
-      value: TacticsNode (5)
+      value: TacticsNodeMiddleTop
       objectReference: {fileID: 0}
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
@@ -5130,7 +5130,7 @@ PrefabInstance:
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
@@ -14137,7 +14137,7 @@ PrefabInstance:
     - target: {fileID: 1022152898348364753, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
       propertyPath: m_Name
-      value: TacticsNode (6)
+      value: TacticsNodeRightMiddle
       objectReference: {fileID: 0}
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
@@ -14177,7 +14177,7 @@ PrefabInstance:
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
@@ -21151,7 +21151,7 @@ PrefabInstance:
     - target: {fileID: 1022152898348364753, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
       propertyPath: m_Name
-      value: TacticsNode (2)
+      value: TacticsNodeLeftBottom
       objectReference: {fileID: 0}
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
@@ -22358,7 +22358,7 @@ PrefabInstance:
     - target: {fileID: 1022152898348364753, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
       propertyPath: m_Name
-      value: TacticsNode (7)
+      value: TacticsNodeRightBottom
       objectReference: {fileID: 0}
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
@@ -22398,7 +22398,7 @@ PrefabInstance:
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
@@ -35092,7 +35092,7 @@ PrefabInstance:
     - target: {fileID: 1022152898348364753, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
       propertyPath: m_Name
-      value: TacticsNode (1)
+      value: TacticsNodeLeftMiddle
       objectReference: {fileID: 0}
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
@@ -36455,7 +36455,7 @@ PrefabInstance:
     - target: {fileID: 1022152898348364753, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
       propertyPath: m_Name
-      value: TacticsNode (3)
+      value: TacticsNodeMiddleMiddle
       objectReference: {fileID: 0}
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
@@ -36470,7 +36470,7 @@ PrefabInstance:
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
@@ -36495,7 +36495,7 @@ PrefabInstance:
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
@@ -37013,7 +37013,7 @@ PrefabInstance:
     - target: {fileID: 1022152898348364753, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
       propertyPath: m_Name
-      value: TacticsNode (4)
+      value: TacticsNodeMiddleBottom
       objectReference: {fileID: 0}
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
@@ -37028,7 +37028,7 @@ PrefabInstance:
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
@@ -37053,7 +37053,7 @@ PrefabInstance:
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
@@ -37802,7 +37802,7 @@ PrefabInstance:
     - target: {fileID: 1022152898348364753, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
       propertyPath: m_Name
-      value: TacticsNode (8)
+      value: TacticsNodeRightTop
       objectReference: {fileID: 0}
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
@@ -37817,7 +37817,7 @@ PrefabInstance:
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
@@ -37842,7 +37842,7 @@ PrefabInstance:
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
@@ -47367,7 +47367,7 @@ PrefabInstance:
     - target: {fileID: 1022152898348364753, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
       propertyPath: m_Name
-      value: TacticsNode
+      value: TacticsNodeLeftTop
       objectReference: {fileID: 0}
     - target: {fileID: 4927442395114609197, guid: e5f1859d2da3448e289c17789db935d5,
         type: 3}
