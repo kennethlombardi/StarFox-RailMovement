@@ -6,6 +6,7 @@ public class ArwingThinker : MonoBehaviour
 {
     public ArwingBrain brain;
     public GameObject foxForceFourTacticNode;
+    public GameObject collidedWith;
 
     private Dictionary<string, object> memory;
     [NonSerialized] public GameState.PlayerState player;

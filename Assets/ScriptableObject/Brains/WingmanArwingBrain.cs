@@ -27,8 +27,13 @@ public class WingmanArwingBrain : ArwingBrain
 
         if (m_foxForceFour)
         {
-            Vector2 diff = arwingThinker.foxForceFourTacticNode.transform.position - arwingThinker.GetComponent<Transform>().transform.position;
-            diff = Vector2.ClampMagnitude(diff, 1);
+            Vector3 foxForceFourTacticNodePosition = arwingThinker.foxForceFourTacticNode.transform.localPosition;
+            // foxForceFourTacticNodePosition.y += 15;
+            Vector3 arwingPosition = arwingThinker.GetComponent<Transform>().transform.localPosition;
+            Vector3 diff = foxForceFourTacticNodePosition - arwingPosition;
+            Debug.Log(diff);
+            // diff *= .2
+            // diff = Vector2.ClampMagnitude(diff, 1);
             h = diff.x;
             v = diff.y;
             // h = -0.5f;
@@ -38,6 +43,13 @@ public class WingmanArwingBrain : ArwingBrain
         {
             h = -.5f;
         }
+
+        if (GameObject.Equals(arwingThinker.collidedWith, arwingThinker.foxForceFourTacticNode))
+        {
+            m_foxForceFour = false;
+        }
+
+        // if (GameObject.Equals(arwingThinker.collidedWith, arwingThinker.ho))
     }
 
     public override void Move(ArwingThinker arwingThinker)
