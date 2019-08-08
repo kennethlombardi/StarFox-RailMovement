@@ -48,6 +48,7 @@ public class ArwingMovement : MonoBehaviour
     public void LocalMove(float x, float y, float speed)
     {
         transform.localPosition += new Vector3(x, y, 0) * speed * Time.deltaTime;
+        // Debug.Log(transform.localPosition);
         ClampPosition();
     }
 

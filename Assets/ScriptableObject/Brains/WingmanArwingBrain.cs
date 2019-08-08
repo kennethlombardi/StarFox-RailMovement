@@ -28,20 +28,18 @@ public class WingmanArwingBrain : ArwingBrain
         if (m_foxForceFour)
         {
             Vector3 foxForceFourTacticNodePosition = arwingThinker.foxForceFourTacticNode.transform.localPosition;
-            // foxForceFourTacticNodePosition.y += 15;
             Vector3 arwingPosition = arwingThinker.GetComponent<Transform>().transform.localPosition;
             Vector3 diff = foxForceFourTacticNodePosition - arwingPosition;
-            Debug.Log(diff);
-            // diff *= .2
-            // diff = Vector2.ClampMagnitude(diff, 1);
             h = diff.x;
             v = diff.y;
-            // h = -0.5f;
-            // v = 0.5f;
         }
         else if (m_horizontalSplit)
         {
-            h = -.5f;
+            Vector3 horizontalSplitTacticNodePosition = arwingThinker.horizontalSplitTacticNode.transform.localPosition;
+            Vector3 arwingPosition = arwingThinker.GetComponent<Transform>().transform.localPosition;
+            Vector3 diff = horizontalSplitTacticNodePosition - arwingPosition;
+            h = diff.x;
+            v = diff.y;
         }
 
         if (GameObject.Equals(arwingThinker.collidedWith, arwingThinker.foxForceFourTacticNode))
