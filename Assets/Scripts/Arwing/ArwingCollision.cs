@@ -7,11 +7,7 @@ public class ArwingCollision : MonoBehaviour
     void OnTriggerEnter(Collider c)
 
     {
-        print("Player collided with" + c.gameObject.name);
-        if (c.gameObject.name.Contains("TacticsNode"))
-        {
-            GetComponent<ArwingThinker>().collidedWith = c.gameObject;
-        }
+        GetComponent<ArwingThinker>().collidedWith = c.gameObject;
     }
 
     void OnTriggerExit(Collider c)

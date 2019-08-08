@@ -9925,6 +9925,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brain: {fileID: 0}
   foxForceFourTacticNode: {fileID: 0}
+  horizontalSplitTacticNode: {fileID: 0}
+  postTacticNode: {fileID: 0}
+  collidedWith: {fileID: 0}
 --- !u!114 &2668923416122235276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20030,16 +20033,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: eadac7660e4969a4c91c550f10746636,
-        type: 3}
-      propertyPath: m_Name
-      value: Arwing_001
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: eadac7660e4969a4c91c550f10746636,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4543049899306784313, guid: eadac7660e4969a4c91c550f10746636,
         type: 3}
       propertyPath: m_LocalRotation.y
@@ -20059,6 +20052,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: eadac7660e4969a4c91c550f10746636,
+        type: 3}
+      propertyPath: m_Name
+      value: Arwing_001
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: eadac7660e4969a4c91c550f10746636,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7666613528706681730, guid: eadac7660e4969a4c91c550f10746636,
         type: 3}

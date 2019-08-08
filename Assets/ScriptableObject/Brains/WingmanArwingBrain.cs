@@ -7,6 +7,7 @@ public class WingmanArwingBrain : ArwingBrain
     public int PlayerNumber;
     private bool m_foxForceFour = false;
     private bool m_horizontalSplit = false;
+    private bool m_groupUp = false;
     private float h = 0;
     private float v = 0;
 
@@ -24,6 +25,7 @@ public class WingmanArwingBrain : ArwingBrain
     {
         m_foxForceFour = arwingThinker.Remember<bool>("foxForceFour");
         m_horizontalSplit = arwingThinker.Remember<bool>("horizontalSplit");
+        m_groupUp = arwingThinker.Remember<bool>("groupUp");
 
         if (m_foxForceFour)
         {
@@ -41,13 +43,14 @@ public class WingmanArwingBrain : ArwingBrain
             h = diff.x;
             v = diff.y;
         }
-
-        if (GameObject.Equals(arwingThinker.collidedWith, arwingThinker.foxForceFourTacticNode))
+        else if (m_groupUp)
         {
-            m_foxForceFour = false;
+            Vector3 postTacticNodePosition = arwingThinker.postTacticNode.transform.localPosition;
+            Vector3 arwingPosition = arwingThinker.GetComponent<Transform>().transform.localPosition;
+            Vector3 diff = postTacticNodePosition - arwingPosition;
+            h = diff.x;
+            v = diff.y;
         }
-
-        // if (GameObject.Equals(arwingThinker.collidedWith, arwingThinker.ho))
     }
 
     public override void Move(ArwingThinker arwingThinker)
@@ -56,5 +59,13 @@ public class WingmanArwingBrain : ArwingBrain
         movement.LocalMove(h, v, movement.xySpeed);
         movement.RotationLook(h, v, movement.lookSpeed);
         movement.HorizontalLean(h, 80, .1f);
+        if (arwingThinker.collidedWith)
+        {
+            if (arwingThinker.collidedWith.name.Contains("Ring"))
+            {
+                movement.QuickSpin(-1);
+                arwingThinker.collidedWith = null;
+            }
+        }
     }
 }
