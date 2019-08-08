@@ -27,9 +27,12 @@ public class WingmanArwingBrain : ArwingBrain
 
         if (m_foxForceFour)
         {
-            Debug.Log("this has to be being hit");
-            h = -0.5f;
-            v = 0.5f;
+            Vector2 diff = arwingThinker.foxForceFourTacticNode.transform.position - arwingThinker.GetComponent<Transform>().transform.position;
+            diff = Vector2.ClampMagnitude(diff, 1);
+            h = diff.x;
+            v = diff.y;
+            // h = -0.5f;
+            // v = 0.5f;
         }
         else if (m_horizontalSplit)
         {

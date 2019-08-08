@@ -5,6 +5,7 @@ using UnityEngine;
 public class ArwingThinker : MonoBehaviour
 {
     public ArwingBrain brain;
+    public GameObject foxForceFourTacticNode;
 
     private Dictionary<string, object> memory;
     [NonSerialized] public GameState.PlayerState player;

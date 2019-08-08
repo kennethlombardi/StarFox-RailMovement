@@ -9832,6 +9832,8 @@ GameObject:
   - component: {fileID: 1888532120382306034}
   - component: {fileID: 1888532120382306045}
   - component: {fileID: 6768755059106968961}
+  - component: {fileID: 2668923416122235276}
+  - component: {fileID: 6188304126170520551}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -9889,7 +9891,7 @@ BoxCollider:
   m_GameObject: {fileID: 1888532120382306033}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 3, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -9922,6 +9924,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brain: {fileID: 0}
+  foxForceFourTacticNode: {fileID: 0}
+--- !u!114 &2668923416122235276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888532120382306033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8082862c244c42d68974a0ef5a0de7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &6188304126170520551
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888532120382306033}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1888532120403069152
 GameObject:
   m_ObjectHideFlags: 0
@@ -19947,16 +19975,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1888532120403069155}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: eadac7660e4969a4c91c550f10746636,
-        type: 3}
-      propertyPath: m_Name
-      value: Arwing_001
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: eadac7660e4969a4c91c550f10746636,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: eadac7660e4969a4c91c550f10746636,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20011,6 +20029,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: eadac7660e4969a4c91c550f10746636,
+        type: 3}
+      propertyPath: m_Name
+      value: Arwing_001
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: eadac7660e4969a4c91c550f10746636,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4543049899306784313, guid: eadac7660e4969a4c91c550f10746636,
         type: 3}
