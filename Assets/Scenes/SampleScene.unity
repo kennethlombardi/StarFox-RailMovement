@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.25278974, g: 0.46423954, b: 0.60344267, a: 1}
+  m_IndirectSpecularColor: {r: 0.25278956, g: 0.46423972, b: 0.6034433, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5594,6 +5594,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 912646693}
     m_Modifications:
+    - target: {fileID: 6363076434590811221, guid: 242186b1c3a3744828e2fc3eaf2b0ea0,
+        type: 3}
+      propertyPath: m_Name
+      value: SlippyRing (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 232750345251183715, guid: 242186b1c3a3744828e2fc3eaf2b0ea0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5648,11 +5653,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6363076434590811221, guid: 242186b1c3a3744828e2fc3eaf2b0ea0,
-        type: 3}
-      propertyPath: m_Name
-      value: SlippyRing (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1594391033720915515, guid: 242186b1c3a3744828e2fc3eaf2b0ea0,
         type: 3}
@@ -7096,6 +7096,18 @@ Transform:
   m_Father: {fileID: 912646693}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &463190050 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1937778553628169766, guid: d170de5ba1dc74adfbd6d44885a4bff1,
+    type: 3}
+  m_PrefabInstance: {fileID: 7972368809218325045}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &466001447
 GameObject:
   m_ObjectHideFlags: 0
@@ -9268,6 +9280,154 @@ Transform:
   m_Father: {fileID: 361593941}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &616574430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 616574433}
+  - component: {fileID: 616574432}
+  - component: {fileID: 616574431}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &616574431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616574430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f43e88ea8372804a98cdef9f069ce20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aud: {fileID: 616574432}
+  resultText: {fileID: 463190050}
+  time: 0.01
+  timer: 0
+  message: 
+  responseText: {fileID: 463190050}
+  nluText: {fileID: 0}
+  samplerate: 44100
+--- !u!82 &616574432
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616574430}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &616574433
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616574430}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 569, y: 260.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &652361548
 GameObject:
   m_ObjectHideFlags: 0
@@ -10993,7 +11153,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 1.8e-44, z: 1.0682e-41, w: 1.04e-43}
+  m_BoundingSphereOverride: {x: 1.575e-41, y: 7.17e-43, z: 0, w: 5.991976e-10}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -19817,6 +19977,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 912646693}
     m_Modifications:
+    - target: {fileID: 6363076434590811221, guid: 242186b1c3a3744828e2fc3eaf2b0ea0,
+        type: 3}
+      propertyPath: m_Name
+      value: PeppyRing (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 232750345251183715, guid: 242186b1c3a3744828e2fc3eaf2b0ea0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19871,11 +20036,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6363076434590811221, guid: 242186b1c3a3744828e2fc3eaf2b0ea0,
-        type: 3}
-      propertyPath: m_Name
-      value: PeppyRing (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1594391033720915515, guid: 242186b1c3a3744828e2fc3eaf2b0ea0,
         type: 3}
@@ -20875,6 +21035,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 912646693}
     m_Modifications:
+    - target: {fileID: 6363076434590811221, guid: 242186b1c3a3744828e2fc3eaf2b0ea0,
+        type: 3}
+      propertyPath: m_Name
+      value: SlippyRing (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 232750345251183715, guid: 242186b1c3a3744828e2fc3eaf2b0ea0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20929,11 +21094,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6363076434590811221, guid: 242186b1c3a3744828e2fc3eaf2b0ea0,
-        type: 3}
-      propertyPath: m_Name
-      value: SlippyRing (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1594391033720915515, guid: 242186b1c3a3744828e2fc3eaf2b0ea0,
         type: 3}
@@ -23494,6 +23654,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 912646693}
     m_Modifications:
+    - target: {fileID: 6363076434590811221, guid: 242186b1c3a3744828e2fc3eaf2b0ea0,
+        type: 3}
+      propertyPath: m_Name
+      value: FoxRing (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 232750345251183715, guid: 242186b1c3a3744828e2fc3eaf2b0ea0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23548,11 +23713,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6363076434590811221, guid: 242186b1c3a3744828e2fc3eaf2b0ea0,
-        type: 3}
-      propertyPath: m_Name
-      value: FoxRing (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1594391033720915515, guid: 242186b1c3a3744828e2fc3eaf2b0ea0,
         type: 3}
@@ -34376,6 +34536,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 912646693}
     m_Modifications:
+    - target: {fileID: 6363076434590811221, guid: 242186b1c3a3744828e2fc3eaf2b0ea0,
+        type: 3}
+      propertyPath: m_Name
+      value: SlippyRing
+      objectReference: {fileID: 0}
     - target: {fileID: 232750345251183715, guid: 242186b1c3a3744828e2fc3eaf2b0ea0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34430,11 +34595,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6363076434590811221, guid: 242186b1c3a3744828e2fc3eaf2b0ea0,
-        type: 3}
-      propertyPath: m_Name
-      value: SlippyRing
       objectReference: {fileID: 0}
     - target: {fileID: 1594391033720915515, guid: 242186b1c3a3744828e2fc3eaf2b0ea0,
         type: 3}
