@@ -6,7 +6,9 @@ using UnityEngine.UI;
 
 public class BotController : MonoBehaviour
 {
-    public InputField session, content;
+    public InputField session;
+
+    public Text content;
 
     public Text chatbotText;
 

@@ -6780,6 +6780,18 @@ Transform:
   m_Father: {fileID: 912646693}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &456192012 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1762917402445767951, guid: d170de5ba1dc74adfbd6d44885a4bff1,
+    type: 3}
+  m_PrefabInstance: {fileID: 7972368809218325045}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &458399243 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7020046596446468837, guid: e5f1859d2da3448e289c17789db935d5,
@@ -9442,8 +9454,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 049d4697da7cf4a87b591438fd7f7a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  session: {fileID: 0}
-  content: {fileID: 0}
+  session: {fileID: 693440151}
+  content: {fileID: 456192012}
   chatbotText: {fileID: 463190050}
 --- !u!114 &616574435
 MonoBehaviour:
@@ -10791,6 +10803,18 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!114 &693440151 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6067334904859733336, guid: d170de5ba1dc74adfbd6d44885a4bff1,
+    type: 3}
+  m_PrefabInstance: {fileID: 7972368809218325045}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d199490a83bb2b844b9695cbf13b01ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &701918389
 GameObject:
   m_ObjectHideFlags: 0
@@ -37983,6 +38007,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 904965606204969212, guid: d170de5ba1dc74adfbd6d44885a4bff1,
+        type: 3}
+      propertyPath: m_Name
+      value: NluResponseText
+      objectReference: {fileID: 0}
+    - target: {fileID: 2698428649374876364, guid: d170de5ba1dc74adfbd6d44885a4bff1,
+        type: 3}
+      propertyPath: m_Name
+      value: SttButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 4405331716359026022, guid: d170de5ba1dc74adfbd6d44885a4bff1,
+        type: 3}
+      propertyPath: m_Name
+      value: SttText
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d170de5ba1dc74adfbd6d44885a4bff1, type: 3}

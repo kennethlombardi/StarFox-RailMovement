@@ -776,7 +776,7 @@ GameObject:
   - component: {fileID: 6405330578761207787}
   - component: {fileID: 6067334904859733336}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: SessionInputField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
