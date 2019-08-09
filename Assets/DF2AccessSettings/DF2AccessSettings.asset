@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -31361583, guid: 412d1a332d1634cb092145344cdf2f62, type: 3}
+  m_Name: DF2AccessSettings
+  m_EditorClassIdentifier: 
+  projectId: vre-starfox-dwscyr
+  credentialsFileName: vre-starfox-dwscyr-ebc6c72d7f48
+  serviceAccount: ' starfox-client@vre-starfox-dwscyr.iam.gserviceaccount.com'
+  languageCode: en-US
