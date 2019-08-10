@@ -9,10 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -31361583, guid: 412d1a332d1634cb092145344cdf2f62, type: 3}
-  m_Name: DF2AccessSettings
+  m_Script: {fileID: 11500000, guid: e54c85b182af04d06ac5c62332111254, type: 3}
+  m_Name: OnPartialResult
   m_EditorClassIdentifier: 
-  projectId: vre-starfox-dwscyr
-  credentialsFileName: vre-starfox-dwscyr-ebc6c72d7f48
-  serviceAccount: starfox-client@vre-starfox-dwscyr.iam.gserviceaccount.com
-  languageCode: en-US

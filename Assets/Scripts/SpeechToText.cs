@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
+using Events;
 using System.Threading.Tasks;
 
 #if UNITY_STANDALONE_WIN
@@ -49,6 +50,7 @@ public class SpeechToText : MonoBehaviour
     private bool micPermissionGranted = false;
     public int samplerate = 44100;
     string nluEndpoint = "https://vre-api-2.azurewebsites.net/queryBot";
+    public GameEvent onFinalResult;
 
 #if UNITY_STANDALONE_WIN
     private SpeechRecognizer recognizer;
@@ -143,6 +145,7 @@ public class SpeechToText : MonoBehaviour
                     resultText.text = finalResultMessage;
                     finalResultMessage = "";
                     partialResultMessage = "";
+                    onFinalResult.Raise();
                 }
                 if (nluMessage != null && nluMessage != "")
                 {
