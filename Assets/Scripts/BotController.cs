@@ -57,7 +57,7 @@ public class BotController : MonoBehaviour
         };
         // client.DetectIntentFromEvent("event-name", parameters, session.text);
         // client.DetectIntentFromText("fox force four", "one");
-        SendText("fox force four");
+        // SendText("fox force four");
     }
 
     private void LogResponseText(DF2Response response)

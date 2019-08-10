@@ -61,7 +61,7 @@ public class WingmanArwingBrain : ArwingBrain
         movement.HorizontalLean(h, 80, .1f);
         if (arwingThinker.collidedWith)
         {
-            if (arwingThinker.collidedWith.name.Contains("Ring"))
+            if (arwingThinker.collidedWith.name.Contains("Ring") || arwingThinker.collidedWith.name.Contains("RingCenter"))
             {
                 movement.QuickSpin(-1);
                 arwingThinker.collidedWith = null;
