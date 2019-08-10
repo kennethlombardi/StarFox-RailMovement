@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.25278974, g: 0.46423954, b: 0.60344267, a: 1}
+  m_IndirectSpecularColor: {r: 0.25278956, g: 0.46423972, b: 0.6034433, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9326,14 +9326,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aud: {fileID: 616574432}
-  resultText: {fileID: 463190050}
+  resultText: {fileID: 456192012}
   time: 0.01
   timer: 0
   message: 
   responseText: {fileID: 463190050}
-  nluText: {fileID: 0}
+  nluText: {fileID: 463190050}
   samplerate: 44100
-  onFinalResult: {fileID: 0}
+  onFinalResult: {fileID: 11400000, guid: 9b9900df7bace47acba22d87cfbaba9b, type: 2}
 --- !u!82 &616574432
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9493,7 +9493,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 616574434}
-        m_MethodName: SendText
+        m_MethodName: SendFinalResult
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11242,7 +11242,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 1e-45, z: 1.1108e-41, w: 1.04e-43}
+  m_BoundingSphereOverride: {x: 1.1311e-41, y: 1.04e-43, z: 7.7e-43, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
